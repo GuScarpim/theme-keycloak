@@ -24,7 +24,7 @@ body {
 
 .left-panel {
   flex: 1;
-  background-color: #8a65f0;
+  background-color: #0e4b4e;
   color: white;
   display: flex;
   align-items: center;
@@ -35,25 +35,7 @@ body {
 .left-content {
   max-width: 400px;
   text-align: center;
-}
-
-.illustration {
-  position: relative;
-}
-
-.person-img {
-}
-
-.lock-img {
-  height: 120px;
-  position: absolute;
-  right: 50px;
-  bottom: 30px;
-}
-
-.welcome-text {
-  font-size: 14px;
-  line-height: 1.6;
+  display: contents;
 }
 
 .right-panel {
@@ -92,18 +74,18 @@ body {
 }
 
 .header-content h2 {
-  color: #8a65f0;
+  color: #0e4b4e;
   font-size: 24px;
   margin-bottom: 5px;
 }
 
 .header-content p {
-  color: #8a65f0;
+  color: #0e4b4e;
   margin-bottom: 5px;
 }
 
 .login-instruction {
-  color: #8a65f0;
+  color: #0e4b4e;
   font-size: 14px;
   margin-bottom: 20px;
 }
@@ -145,7 +127,7 @@ body {
 .login-button {
   width: 100%;
   padding: 12px;
-  background-color: #8a65f0;
+  background-color: #0e4b4e;
   color: white;
   border: none;
   border-radius: 4px;
@@ -212,14 +194,14 @@ body {
 
 .language-dropdown:hover {
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  border-color: #8a65f0;
+  border-color: #0e4b4e;
 }
 
 .language-icon {
   display: flex;
   align-items: center;
   margin-right: 5px;
-  color: #8a65f0;
+  color: #0e4b4e;
 }
 
 .language-dropdown select {
@@ -232,7 +214,7 @@ body {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a65f0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230e4b4e' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: right 0 center;
   background-size: 12px;

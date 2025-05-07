@@ -17,12 +17,7 @@
     <div class="login-container">
         <div class="left-panel">
             <div class="left-content">
-                <div class="illustration">
-                    <img src="${url.resourcesPath}/img/overscore_logo.svg" alt="overscore" class="person-img" />
-                </div>
-                <p class="welcome-text">
-                    ${msg("welcomeMessage")}
-                </p>
+                <img src="${url.resourcesPath}/img/overscore_logo.svg" alt="overscore" class="person-img" />
             </div>
         </div>
         <div class="right-panel">
