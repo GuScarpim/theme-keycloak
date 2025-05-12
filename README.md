@@ -17,6 +17,8 @@ docker run -d --name postgres \
     -v ~/database/postgres:/var/lib/postgresql/data \
     --restart always postgres:latest
 
+docker run -d --name postgres -p 5432:5432 -e POSTGRES_DB=keycloak -e POSTGRES_USER=postgres -e POSTGRES_PASSWORD=postgres -v %USERPROFILE%\database\postgres:/var/lib/postgresql/data --restart always postgres:latest
+
 ```
 
 
@@ -35,6 +37,8 @@ docker run -d --name keycloak \
     -e KEYCLOAK_PASSWORD=admin \
     --link postgres \
     --restart always quay.io/keycloak/keycloak:16.1.0
+
+docker run -d --name keycloak -p 8080:8080 -e DB_VENDOR=postgres -e DB_ADDR=postgres -e DB_DATABASE=keycloak -e DB_SCHEMA=public -e DB_USER=postgres -e DB_PASSWORD=postgres -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin --link postgres --restart always quay.io/keycloak/keycloak:26.2.4 
 ```
 
 
@@ -90,6 +94,9 @@ docker run -d --name keycloak \
     -v ~/keycloak/themes:/opt/jboss/keycloak/themes \
     -v ~/keycloak/disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli \
     --restart always quay.io/keycloak/keycloak:16.1.0
+
+docker run -d --name keycloak -p 8080:8080 -e DB_VENDOR=postgres -e DB_ADDR=postgres -e DB_DATABASE=keycloak -e DB_SCHEMA=public -e DB_USER=postgres -e DB_PASSWORD=postgres -e KEYCLOAK_USER=admin -e KEYCLOAK_PASSWORD=admin --link postgres -v %USERPROFILE%\keycloak\themes:/opt/jboss/keycloak/themes -v %USERPROFILE%\keycloak\disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli --restart always quay.io/keycloak/keycloak:16.1.0
+
 ```
 
 ### 8. Open keycloak-theme-vuejs repository folder and install with yarn
