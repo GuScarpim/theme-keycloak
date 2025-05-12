@@ -5,6 +5,16 @@
 - https://youtu.be/qrjjiG1206E ( tutorial pt-br )
 
 
+Executar na versão nova:
+
+```
+docker run -p 8080:8080 ^
+-e KC_BOOTSTRAP_ADMIN_USERNAME=admin ^
+-e KC_BOOTSTRAP_ADMIN_PASSWORD=admin ^
+-v C:\Users\Gusta\database\keycloak\themes:/opt/keycloak/themes ^
+quay.io/keycloak/keycloak:26.2.4 start-dev
+```
+
 ### 1. Run database for Keycloak (Postgres)
 Attention: Configure Volume folder in your environment and replace this (~/database/postgres)
 
